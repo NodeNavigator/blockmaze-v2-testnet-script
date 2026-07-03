@@ -1,0 +1,43 @@
+# blockmaze-v2-testnet-script
+
+This repository provides ubuntu 22.04 and 24.04 script for running a node on blockmaze testnet:
+
+System Requirements:
+
+- Operating System: Ubuntu 22.04 or 24.04
+- Memory: At least 16GB RAM
+- Storage: Minimum 20GB available disk space
+- Network: Stable internet connection
+- CPU: 4core
+
+Clone this repo using:
+git clone '<https://github.com/NodeNavigator/blockmaze-v2-testnet-script.git>'
+
+Setup the node:
+open a terminal window and run the following command:
+
+```bash
+./install-go.sh
+```
+
+after that
+```bash
+source ~/.ptofile
+source ~/.bashrc
+```
+
+```bash
+./node_state_sync.sh
+```
+
+once it finishes, start the node service with the following command:
+
+```bash
+sudo systemctl start blockmazechain.service
+```
+
+check the node logs with the following command:
+
+```bash
+journalctl -u blockmazechain.service -f
+```
