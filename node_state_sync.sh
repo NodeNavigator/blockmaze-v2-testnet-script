@@ -188,8 +188,8 @@ fi
 
     #========================= STATE SYNC CONFIGURATION =========================
 	# Configure state sync with dynamic trust values
-	STATE_SYNC_RPC_SERVERS="https:\/\/tendermint.testnet.stackflow.site,https:\/\/tendermint-arc.testnet.stackflow.site,https:\/\/tendermint-in.testnet.stackflow.site"
-	API_BASE="https://bm-api.testnet.stackflow.site"
+	STATE_SYNC_RPC_SERVERS="https:\/\/v2-tendermint.testnet.stackflow.site,https:\/\/v2-tendermint-arc.testnet.stackflow.site,https:\/\/v2-tendermint-in.testnet.stackflow.site"
+	API_BASE="https://v2-bm-api.testnet.stackflow.site"
     
 	echo "Fetching latest block height from $API_BASE..."
 	latest_height=$(curl -s "$API_BASE/cosmos/base/tendermint/v1beta1/blocks/latest" | jq -r '.block.header.height')
