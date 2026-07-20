@@ -92,7 +92,8 @@ KEYALGO="eth_secp256k1"
 LOGLEVEL="info"
 
 # Set dedicated home directory for the blockmazed instance
- HOMEDIR="/data/.tmp-blockmazed"
+#  HOMEDIR="/data/.tmp-blockmazed"
+ HOMEDIR="$HOME/.tmp-blockmazed"
 
 
 # Check if the service is running

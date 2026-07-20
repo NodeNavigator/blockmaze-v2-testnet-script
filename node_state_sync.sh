@@ -92,7 +92,8 @@ KEYALGO="eth_secp256k1"
 LOGLEVEL="info"
 
 # Set dedicated home directory for the blockmazed instance
- HOMEDIR="/data/.tmp-blockmazed"
+#  HOMEDIR="/data/.tmp-blockmazed"
+ HOMEDIR="$HOME/.tmp-blockmazed"
 
 
 # Check if the service is running
@@ -285,5 +286,5 @@ WantedBy=multi-user.target'> /etc/systemd/system/blockmazechain.service"
 
 sudo systemctl daemon-reload
 sudo systemctl enable blockmazechain.service
-# blockmazed tendermint unsafe-reset-all --home $HOMEDIR
+blockmazed tendermint unsafe-reset-all --home $HOMEDIR
 # sudo systemctl start blockmazechain.service
