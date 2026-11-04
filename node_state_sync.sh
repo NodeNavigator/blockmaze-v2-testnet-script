@@ -58,7 +58,7 @@ if [ "$OS" == "Ubuntu" ] && [ "$VERSION" == "22.04" -o "$VERSION" == "24.04" ]; 
 # Detect Ubuntu version for choosing the matching prebuilt binary
 # UBUNTU_VERSION=$(lsb_release -rs)
 # Set binary download URL (update this if your release URL pattern is different)
-BINARY_URL="https://github.com/NodeNavigator/blockmaze-v2-testnet-script/releases/download/v1.0.2-blockmazed/${BINARY}"
+BINARY_URL="https://github.com/NodeNavigator/blockmaze-v2-testnet-upgrade/releases/download/v1.0.2-blockmazed/${BINARY}"
 echo $BINARY_URL
 
 # Download and install the node binary into the chosen install path
